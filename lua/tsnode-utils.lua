@@ -41,8 +41,6 @@ M.curs_to_node_end = function ()
   local nuc = M.node_under_cursor()
   local _, _, end_row, end_column = nuc:range()
 
-  local something = "This is a long string"
-
   local current_cursor = vim.api.nvim_win_get_cursor(0)
   vim.api.nvim_win_set_cursor(0, current_cursor)
 
